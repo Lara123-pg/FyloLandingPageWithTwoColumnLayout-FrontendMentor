@@ -1,0 +1,364 @@
+@media (max-width: 1186px) {
+    div.container {
+        main {
+            div.infoContent {
+                padding-left: 5em;
+
+                div.infos {
+                    h1 {
+                        font-size: 2rem;
+                    }
+                }
+
+                img {
+                    @include StyleWH(450px, 360px);
+                }
+            }
+
+            div.background {
+                top: 42em;
+            }
+            
+
+            div.infoContent2 {
+                padding-left: 5em;
+
+                width: 1400px;
+
+                img.image {
+                    @include StyleWH(450px, 360px);
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1140px) {
+    div.container {
+        main {
+            div.infoContent2 {
+                padding-left: 1.2em;
+
+                width: 1200px;
+
+                img.image {
+                    @include StyleWH(400px, 360px);
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1090px) {
+    div.container {
+        main {
+            div.infoContent {
+                padding-left: 3em;
+
+                div.infos {
+                    height: 250px;
+
+                    h1 {
+                        font-size: 1.8rem;
+                    }
+
+                    p {
+                        font-size: 0.9rem;
+                    }
+                }
+
+                img {
+                    @include StyleWH(400px, 360px);
+                }
+            }
+            
+            div.infoContent2 {
+                padding-left: 1.2em;
+
+                width: 1200px;
+
+                div.infos2 {
+                    strong {
+                        font-size: 1.5rem;
+                    }
+
+                    p, a {
+                        font-size: 1rem;
+                    }
+
+                    div.comment {
+                        @include StyleWH(400px, 170px);
+
+                        p.text {
+                            font-size: 0.9rem;
+
+                            width: 290px;
+                        }
+
+                        img.quotes {
+                            @include StyleWH(15px, 15px);
+                        }
+
+                        div.profile {
+                            img {
+                                @include StyleWH(35px, 35px);
+                            }
+
+                            div.infoProfile {
+                                p.name {
+                                    font-size: 0.8rem;
+                                }
+
+                                p.function {
+                                    font-size: 0.5rem;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1035px) {
+    div.container {
+        main {
+            div.infoContent {
+                padding-left: 4em;
+
+                div.infos {
+                    height: 240px;
+
+                    h1 {
+                        font-size: 1.7rem;
+                    }
+                }
+
+                img {
+                    @include StyleWH(350px, 350px);
+                }
+            }
+            
+            div.infoContent2 {
+                padding-left: 2em;
+
+                width: 1000px;
+
+                div.infos2 {
+                    strong {
+                        font-size: 1.4rem;
+                    }
+                }
+
+                img.image {
+                    @include StyleWH(350px, 350px);
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 975px) {
+    div.container {
+        main {
+            div.infoContent {
+                padding-left: 3em;
+
+                img {
+                    @include StyleWH(300px, 300px);
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 940px) {
+    div.container {
+        main {
+            div.infoContent {
+                padding-left: 2em;
+        
+                img {
+                    @include StyleWH(290px, 290px);
+                }
+            }
+
+            div.background {
+                top: 38em;
+            }
+            
+            div.infoContent2 {
+                padding-left: 1em;
+        
+                width: 1000px;
+        
+                div.infos2 {
+                    strong {
+                        font-size: 1.4rem;
+                    }
+                }
+        
+                img.image {
+                    @include StyleWH(350px, 350px);
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 915px) {
+    div.container {
+        main {
+            div.infoContent {
+                flex-direction: column;
+
+                div.infos {
+                    order: 2;
+
+                    height: 330px;
+
+                    h1 {
+                        text-align: center;
+
+                        font-size: 1.5rem;
+
+                        width: 310px;
+
+                        align-self: center;
+                    }
+
+                    p {
+                        font-size: 1rem;
+
+                        text-align: center;
+
+                        width: 330px;
+
+                        align-self: center;
+                    }
+
+                    div.inputButton {
+                        div.inputAndButton {
+                            flex-direction: column;
+
+                            align-items: center;
+
+                            height: 200px;
+
+                            input, button {
+                                width: 300px;
+                            }
+                        }
+                    }
+                }
+
+                img {
+                    @include StyleWH(400px, 300px);
+
+                    order: 1;
+
+                    margin-bottom: 4em;
+                }
+            }
+
+            div.background {
+                top: 62em;
+
+                img {
+                    width: 1000px;
+                }
+            }
+
+            div.infoContent2 {
+                flex-direction: column;
+
+                align-items: center;
+
+                width: 900px;
+
+                div.infos2 {
+                    align-items: center;
+
+                    order: 2;
+
+                   
+                }
+
+                img.image {
+                    @include StyleWH(400px, 300px);
+
+                    order: 1;
+
+                    margin-bottom: 4em;
+                }
+            }
+
+            div.inputInfo {
+                flex-direction: column;
+                justify-content: space-around;
+
+                height: 350px;
+
+                div.infosInput {
+                    align-items: center;
+
+                    p {
+                        text-align: center;
+
+                        width: 280px;
+                    }
+                }
+
+                div.inputButtonInfo {
+                    align-items: center;
+
+                    input, button {
+                        width: 300px;
+                    }
+                }
+            }
+        }
+
+        footer {
+            div.footerInfo {
+                flex-direction: column;
+
+                padding-left: 5em;
+
+                height: 600px;
+
+                div.logoContact {
+                    align-self: flex-start;
+                }
+
+                div.links {
+                    align-self: flex-start;
+
+                    nav {
+                        ul {
+                            display: flex;
+                            flex-direction: column;
+                        }
+
+                        li#link4 {
+                            margin-bottom: 2em;
+                        }
+                    }
+                }
+
+                div.socialMedias {
+                    width: 150px;
+                }
+            }
+        }
+    }   
+}
+
+@media (max-width: 550px) {
+    div.container {
+        header {
+            padding-left: 1em;
+        }
+    }
+}
