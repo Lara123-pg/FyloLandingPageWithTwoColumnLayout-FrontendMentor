@@ -19,7 +19,7 @@ footer {
                 div.phone, div.email {
                     @include Display(space-between);
                   
-                    width: 200px;
+                    width: 230px;
 
                     p {
                         @include FontColor($color2, 0.9rem);
