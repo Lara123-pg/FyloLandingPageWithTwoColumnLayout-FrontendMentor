@@ -1,0 +1,27 @@
+header {
+    @include Display(space-between, center);
+
+    width: 100%;
+
+    padding: 3em;
+
+    background-color: $color7;
+
+    nav {
+        ul {
+            @include Display(space-between);
+
+            width: 250px;
+
+            list-style: none;
+
+            li a {
+                @include FontColor($color1, 0.9rem, 400);
+
+                text-decoration: none;
+                
+                font-family: 'Raleway', sans-serif;
+            }
+        }
+    }
+}

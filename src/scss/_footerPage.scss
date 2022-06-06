@@ -1,0 +1,129 @@
+footer {
+    background-color: $color3;
+
+    div.footerInfo {
+        @include Display(space-around, center);
+
+        height: 400px;
+
+        div.logoContact {
+            @include Display(space-between, '', column);
+
+            height: 140px;
+
+            div.contact {
+                @include Display(space-between, '', column);
+
+                height: 55px;
+
+                div.phone, div.email {
+                    @include Display(space-between);
+                  
+                    width: 200px;
+
+                    p {
+                        @include FontColor($color2, 0.9rem);
+                    }
+                }
+
+                div.email {
+                    width: 160px;
+                }
+            }
+        }
+
+        div.links {
+            nav {
+                ul {
+                    display: grid;
+                    grid-template-areas: 'a1 a5'
+                                         'a2 a6'
+                                         'a3 a7'
+                                         'a4 a8';
+                    list-style: none;
+
+                    justify-content: space-between;
+
+                    row-gap: 1em;
+
+                    width: 300px;
+
+                    li a {
+                        @include FontColor($color2, 0.9rem, 400);
+                    
+                        font-family: 'Raleway', sans-serif;
+
+                        text-decoration: none;
+
+                        &:hover {
+                            color: $color5;
+                        }
+                    }
+
+                    li#link1 {
+                        grid-area: a1;
+                    }
+
+                    li#link2 {
+                        grid-area: a2;
+                    }
+
+                    li#link3 {
+                        grid-area: a3;
+                    }
+
+                    li#link4 {
+                        grid-area: a4;
+                    }
+
+                    li#link5 {
+                        grid-area: a5;
+                    }
+
+                    li#link6 {
+                        grid-area: a6;
+                    }
+
+                    li#link7 {
+                        grid-area: a7;
+                    }
+
+                    li#link8 {
+                        grid-area: a8;
+                    }
+                }
+            }
+        }
+
+        div.socialMedias {
+            @include Display(space-between, center);
+
+            width: 130px;
+
+            div.facebook, div.twitter, div.instagram {
+                @include Display(center, center);
+                @include StyleWH(40px, 40px);
+
+                border: 1px solid $color2;  
+
+                border-radius: 60px;
+
+                img {
+                    @include StyleWH(20px, 20px);
+                }
+
+                &:hover {
+                    cursor: pointer;
+
+                    border-color: $color5;
+                }
+            }
+        }
+    }
+
+    p.attribution {
+        text-align: center;
+
+        color: $color7;
+    }
+}
